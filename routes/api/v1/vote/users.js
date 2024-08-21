@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const router = express.Router();
 
-const votesFilePath = path.join(__dirname, '../../../cache/v1/votes.json');
+const votesFilePath = path.join(__dirname, '../../../../cache/v1/votes.json');
 
 router.get('/:id', (req, res) => {
     const userId = req.params.id;
